@@ -1,0 +1,10 @@
+[build]
+builder = "nixpacks"
+
+[deploy]
+startCommand = "python3 telegram-bot/bot.py"
+restartPolicyType = "always"
+
+[[volumes]]
+mountPath = "/data"
+name = "bot-data"
